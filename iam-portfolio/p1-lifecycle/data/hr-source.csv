@@ -1,0 +1,16 @@
+FirstName,LastName,Department,JobTitle,Manager,StartDate,EmploymentType,EndDate
+Marcus,Hale,Sales,Sales Manager,,2021-03-15,Employee,
+Priya,Nair,Sales,Account Executive,Marcus Hale,2022-06-01,Employee,
+Diego,Torres,Sales,Sales Representative,Marcus Hale,2023-09-18,Employee,
+Hannah,Brooks,Sales,Sales Development Contractor,Marcus Hale,2026-04-06,Contractor,2027-03-31
+Olivia,Bennett,HR,HR Manager,,2020-11-02,Employee,
+Samuel,Okafor,HR,HR Specialist,Olivia Bennett,2022-02-14,Employee,
+Grace,Lin,HR,Recruiter,Olivia Bennett,2024-01-22,Employee,
+Ethan,Walker,IT,IT Manager,,2019-08-12,Employee,
+Maya,Patel,IT,IT Helpdesk Analyst,Ethan Walker,2023-05-08,Employee,
+Jonas,Weber,IT,Systems Administrator,Ethan Walker,2021-10-04,Employee,
+Lena,Fischer,IT,Network Engineer Contractor,Ethan Walker,2026-07-13,Contractor,2026-12-31
+Rachel,Kim,Finance,Finance Manager,,2020-04-27,Employee,
+Omar,Haddad,Finance,Financial Analyst,Rachel Kim,2022-09-12,Employee,
+Sofia,Alvarez,Finance,Accounts Payable Specialist,Rachel Kim,2024-03-04,Employee,
+Tyler,Nguyen,Finance,Payroll Specialist,Rachel Kim,2025-08-18,Employee,2026-10-26

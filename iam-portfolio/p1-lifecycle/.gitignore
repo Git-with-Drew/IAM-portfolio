@@ -1,0 +1,3 @@
+# Real upload file contains temporary passwords and the tenant domain
+data/users.csv
+*.env

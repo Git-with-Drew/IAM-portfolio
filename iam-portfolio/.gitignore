@@ -1,0 +1,28 @@
+# Secrets and credentials (never commit these)
+.env
+*.env
+*.pem
+*.key
+*.pfx
+*.p12
+credentials
+.aws/
+
+# Real bulk-upload files contain temporary passwords and the tenant domain.
+# Commit only sanitized samples such as users.sample.csv.
+users.csv
+
+# Python
+.venv/
+venv/
+__pycache__/
+*.pyc
+
+# macOS / editors
+.DS_Store
+.vscode/
+.idea/
+
+# Script output that may contain real user data
+report.csv
+*.log
