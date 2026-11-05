@@ -1,0 +1,17 @@
+{
+    "Statement": [
+        {
+            "Action": "s3:ListBucket",
+            "Effect": "Allow",
+            "Resource": "arn:aws:s3:::BUCKET_NAME",
+            "Sid": "ListBucket"
+        },
+        {
+            "Action": "s3:GetObject",
+            "Effect": "Allow",
+            "Resource": "arn:aws:s3:::BUCKET_NAME/*",
+            "Sid": "ReadObjects"
+        }
+    ],
+    "Version": "2012-10-17"
+}

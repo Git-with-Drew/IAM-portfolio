@@ -1,0 +1,11 @@
+{
+    "Statement": [
+        {
+            "Action": "s3:ListAllMyBuckets",
+            "Effect": "Allow",
+            "Resource": "*",
+            "Sid": "ListBuckets"
+        }
+    ],
+    "Version": "2012-10-17"
+}

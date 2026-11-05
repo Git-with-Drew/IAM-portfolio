@@ -1,0 +1,59 @@
+# Secrets and credentials (never commit these)
+.env
+*.env
+*.pem
+*.key
+*.pfx
+*.p12
+credentials
+.aws/
+
+# Real bulk-upload files contain temporary passwords and the tenant domain.
+# Commit only sanitized samples such as users.sample.csv.
+users.csv
+
+# Python
+.venv/
+venv/
+__pycache__/
+*.pyc
+
+# macOS / editors
+.DS_Store
+.vscode/
+.idea/
+
+# Script output that may contain real user data
+report.csv
+*.log
+
+# Terraform working directory
+.terraform/
+
+# Terraform state files (may contain passwords and secrets)
+*.tfstate
+*.tfstate.*
+*.tfstate.backup
+
+# Terraform variable files (may contain secrets)
+*.tfvars
+*.tfvars.json
+!example.tfvars
+
+# Terraform crash logs
+crash.log
+crash.*.log
+
+# Terraform plan files (may contain sensitive values)
+*.tfplan
+*.plan
+
+# Override files
+override.tf
+override.tf.json
+*_override.tf
+*_override.tf.json
+
+# CLI configuration (may contain credentials)
+.terraformrc
+terraform.rc
