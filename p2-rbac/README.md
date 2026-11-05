@@ -35,7 +35,7 @@ Everything is defined in [`Deploy/`](Deploy/), region `us-east-1`. Counted from 
 | Customer-managed policies | 7 | JSON copies in [`docs/policies/`](docs/policies/) |
 | Group-policy attachments | 12 | `pol-console-nav` on every group, plus the role-specific policies |
 
-The attachment matrix as built ([image](docs/policy-attachment-matrix.png)):
+The attachment matrix as built:
 
 | Group | Policies |
 |---|---|

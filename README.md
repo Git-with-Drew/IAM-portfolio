@@ -7,7 +7,7 @@ Hands-on Identity and Access management (IAM) labs built with free tools and fic
 | # | Project | What I built | Tools | Status |
 |---|---|---|---|---|
 | 1 | [User Lifecycle Management](p1-lifecycle/README.md) | Joiner / mover / leaver process for 15 users: bulk provisioning, group-based access, urgent and standard offboarding, runbook, controls mapping, metrics | Microsoft Entra ID Free | Complete (follow-ups listed in its README) |
-| 2 | RBAC Design and Implementation | Role-permission matrix implemented as cloud groups and policies, with access tests | AWS IAM, Entra roles | Planned |
+| 2 | RBAC Design and Implementation | Role-permission matrix implemented as cloud groups and policies, with access tests | AWS IAM, Entra roles | Complete (follow-ups listed in its README)  |
 | 3 | SSO and Federation | Working SAML and OIDC sign-in with annotated flows | Okta, samltest.id | Planned |
 | 4 | Cloud IAM Policy Design | Least-privilege policies, conditions, and policy simulation | AWS IAM | Planned |
 | 5 | IAM Automation | Python scripts for provisioning, deprovisioning, and access reports | Python, Okta API | Planned |
