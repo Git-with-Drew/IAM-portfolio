@@ -1,0 +1,5 @@
+@actsecurity/iam-data version: 0.22.202611091
+Data last updated: Sun Nov 08 2026 23:41:46 GMT-0500 (Eastern Standard Time)
+Update with either:
+  npm update @actsecurity/iam-data
+  npm update -g @actsecurity/iam-data

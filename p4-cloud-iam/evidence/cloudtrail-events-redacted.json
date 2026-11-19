@@ -1,0 +1,252 @@
+{
+  "_note": "Extract of the AWS CloudTrail event history (management events) for the Project 4 sign-in tests on 2026-11-17. Only events for the lab user dev1 and the MFA device changes made for it are kept. Account ID, IP addresses, user agents, request IDs and the administrator user name were removed. Times are UTC (the console screenshots show UTC-05:00).",
+  "events": [
+    {
+      "time_utc": "2026-11-17T17:20:57Z",
+      "service": "iam",
+      "event": "CreateVirtualMFADevice",
+      "principal": "admin-user",
+      "principal_type": "IAMUser",
+      "mfa_authenticated": "true",
+      "result": "Success"
+    },
+    {
+      "time_utc": "2026-11-17T17:22:08Z",
+      "service": "iam",
+      "event": "EnableMFADevice",
+      "principal": "admin-user",
+      "principal_type": "IAMUser",
+      "mfa_authenticated": "true",
+      "result": "Success",
+      "target_user": "dev1"
+    },
+    {
+      "time_utc": "2026-11-17T17:27:55Z",
+      "service": "signin",
+      "event": "ConsoleLogin",
+      "principal": "dev1",
+      "principal_type": "IAMUser",
+      "mfa_authenticated": null,
+      "result": "Failure",
+      "mfa_used": "Yes"
+    },
+    {
+      "time_utc": "2026-11-17T17:30:46Z",
+      "service": "signin",
+      "event": "ConsoleLogin",
+      "principal": "dev1",
+      "principal_type": "IAMUser",
+      "mfa_authenticated": null,
+      "result": "Failure",
+      "mfa_used": "Yes"
+    },
+    {
+      "time_utc": "2026-11-17T17:32:05Z",
+      "service": "signin",
+      "event": "ConsoleLogin",
+      "principal": "dev1",
+      "principal_type": "IAMUser",
+      "mfa_authenticated": null,
+      "result": "Success",
+      "mfa_used": "Yes"
+    },
+    {
+      "time_utc": "2026-11-17T17:44:12Z",
+      "service": "s3",
+      "event": "CreateBucket",
+      "principal": "dev1",
+      "principal_type": "IAMUser",
+      "mfa_authenticated": "true",
+      "result": "AccessDenied",
+      "message": "User: arn:aws:iam::<ACCOUNT_ID>:user/dev1 is not authorized to perform: s3:CreateBucket on resource: \"arn:aws:s3:::test-12789-abc\" because no identity-based policy allows the s3:CreateBucket action"
+    },
+    {
+      "time_utc": "2026-11-17T20:17:21Z",
+      "service": "signin",
+      "event": "SwitchRole",
+      "principal": "dev1",
+      "principal_type": "IAMUser",
+      "mfa_authenticated": "true",
+      "switch_to_role": "p4-app-role",
+      "result": "Success"
+    },
+    {
+      "time_utc": "2026-11-17T20:22:34Z",
+      "service": "q",
+      "event": "StartTroubleshootingAnalysis",
+      "principal": "dev1",
+      "principal_type": "AssumedRole",
+      "mfa_authenticated": "true",
+      "result": "AccessDenied",
+      "message": "User: arn:aws:sts::<ACCOUNT_ID>:assumed-role/p4-app-role/dev1 is not authorized to perform: q:StartTroubleshootingAnalysis because no identity-based policy allows the q:StartTroubleshootingAnalysis action"
+    },
+    {
+      "time_utc": "2026-11-17T20:28:28Z",
+      "service": "cloudshell",
+      "event": "CreateEnvironment",
+      "principal": "dev1",
+      "principal_type": "AssumedRole",
+      "mfa_authenticated": "true",
+      "result": "AccessDenied",
+      "message": null
+    },
+    {
+      "time_utc": "2026-11-17T20:35:54Z",
+      "service": "signin",
+      "event": "SwitchRole",
+      "principal": "dev1",
+      "principal_type": "IAMUser",
+      "mfa_authenticated": "true",
+      "switch_to_role": "p4-boundary-demo",
+      "result": "Success"
+    },
+    {
+      "time_utc": "2026-11-17T20:43:13Z",
+      "service": "iam",
+      "event": "DeleteVirtualMFADevice",
+      "principal": "admin-user",
+      "principal_type": "IAMUser",
+      "mfa_authenticated": "true",
+      "result": "Success"
+    },
+    {
+      "time_utc": "2026-11-17T20:43:13Z",
+      "service": "iam",
+      "event": "DeactivateMFADevice",
+      "principal": "admin-user",
+      "principal_type": "IAMUser",
+      "mfa_authenticated": "true",
+      "result": "Success",
+      "target_user": "dev1"
+    },
+    {
+      "time_utc": "2026-11-17T20:43:32Z",
+      "service": "signin",
+      "event": "ConsoleLogin",
+      "principal": "dev1",
+      "principal_type": "IAMUser",
+      "mfa_authenticated": null,
+      "result": "Success",
+      "mfa_used": "No"
+    },
+    {
+      "time_utc": "2026-11-17T20:43:38Z",
+      "service": "signin",
+      "event": "SwitchRole",
+      "principal": "dev1",
+      "principal_type": "IAMUser",
+      "mfa_authenticated": "false",
+      "switch_to_role": "p4-boundary-demo",
+      "result": "Failure"
+    },
+    {
+      "time_utc": "2026-11-17T20:43:53Z",
+      "service": "signin",
+      "event": "SwitchRole",
+      "principal": "dev1",
+      "principal_type": "IAMUser",
+      "mfa_authenticated": "false",
+      "switch_to_role": "p4-app-role",
+      "result": "Failure"
+    },
+    {
+      "time_utc": "2026-11-17T20:44:15Z",
+      "service": "signin",
+      "event": "SwitchRole",
+      "principal": "dev1",
+      "principal_type": "IAMUser",
+      "mfa_authenticated": "false",
+      "switch_to_role": "p4-app-role",
+      "result": "Failure"
+    },
+    {
+      "time_utc": "2026-11-17T20:44:39Z",
+      "service": "signin",
+      "event": "SwitchRole",
+      "principal": "dev1",
+      "principal_type": "IAMUser",
+      "mfa_authenticated": "false",
+      "switch_to_role": "p4-app-role",
+      "result": "Failure"
+    },
+    {
+      "time_utc": "2026-11-17T20:44:51Z",
+      "service": "signin",
+      "event": "SwitchRole",
+      "principal": "dev1",
+      "principal_type": "IAMUser",
+      "mfa_authenticated": "false",
+      "switch_to_role": "p4-app-role",
+      "result": "Failure"
+    },
+    {
+      "time_utc": "2026-11-17T20:45:19Z",
+      "service": "iam",
+      "event": "CreateVirtualMFADevice",
+      "principal": "admin-user",
+      "principal_type": "IAMUser",
+      "mfa_authenticated": "true",
+      "result": "Success"
+    },
+    {
+      "time_utc": "2026-11-17T20:46:36Z",
+      "service": "iam",
+      "event": "EnableMFADevice",
+      "principal": "admin-user",
+      "principal_type": "IAMUser",
+      "mfa_authenticated": "true",
+      "result": "Success",
+      "target_user": "dev1"
+    },
+    {
+      "time_utc": "2026-11-17T20:46:51Z",
+      "service": "signin",
+      "event": "SwitchRole",
+      "principal": "dev1",
+      "principal_type": "IAMUser",
+      "mfa_authenticated": "false",
+      "switch_to_role": "p4-boundary-demo",
+      "result": "Failure"
+    },
+    {
+      "time_utc": "2026-11-17T20:47:00Z",
+      "service": "signin",
+      "event": "SwitchRole",
+      "principal": "dev1",
+      "principal_type": "IAMUser",
+      "mfa_authenticated": "false",
+      "switch_to_role": "p4-app-role",
+      "result": "Failure"
+    },
+    {
+      "time_utc": "2026-11-17T20:47:47Z",
+      "service": "signin",
+      "event": "ConsoleLogin",
+      "principal": "dev1",
+      "principal_type": "IAMUser",
+      "mfa_authenticated": null,
+      "result": "Success",
+      "mfa_used": "Yes"
+    },
+    {
+      "time_utc": "2026-11-17T20:47:53Z",
+      "service": "signin",
+      "event": "SwitchRole",
+      "principal": "dev1",
+      "principal_type": "IAMUser",
+      "mfa_authenticated": "true",
+      "switch_to_role": "p4-boundary-demo",
+      "result": "Success"
+    },
+    {
+      "time_utc": "2026-11-17T20:47:59Z",
+      "service": "signin",
+      "event": "SwitchRole",
+      "principal": "dev1",
+      "principal_type": "IAMUser",
+      "mfa_authenticated": "true",
+      "switch_to_role": "p4-app-role",
+      "result": "Success"
+    }
+  ]
+}

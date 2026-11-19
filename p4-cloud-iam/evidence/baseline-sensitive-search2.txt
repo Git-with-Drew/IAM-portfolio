@@ -1,0 +1,14 @@
+s3:BypassGovernanceRetention
+s3:GetBucketLogging
+s3:GetBucketObjectLockConfiguration
+s3:GetBucketVersioning
+s3:GetEncryptionConfiguration
+s3:GetObjectRetention
+s3:PutBucketLogging
+s3:PutBucketObjectLockConfiguration
+s3:PutBucketVersioning
+s3:PutEncryptionConfiguration
+s3:PutObjectRetention
+s3:UpdateObjectEncryption
+
+

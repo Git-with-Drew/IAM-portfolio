@@ -1,0 +1,18 @@
+# Terraform
+.terraform/
+*.tfstate
+*.tfstate.*
+crash.log
+*.tfvars
+!example.tfvars
+
+# Amphi IAM Collect output describes the whole AWS account: never commit
+iam-data/
+
+# Raw, unredacted screenshots
+evidence/raw/
+
+# npm stubs created by running npm in the project folder
+node_modules/
+package.json
+package-lock.json
