@@ -100,9 +100,9 @@ Workbook: [`docs/test-results.xlsx`](docs/test-results.xlsx). Twelve cases were 
 p4-cloud-iam/
 ├── README.md
 ├── Deploy/      main.tf, variables.tf, outputs.tf, example.tfvars
-├── policies/    baseline, app-role, allow-only, boundary, trust, region guardrail, expanded and shrunk
 ├── docs/        before-after.xlsx, test-results.xlsx, iam-convert-output/
-└── evidence/    Amphi and AWS outputs, screenshots
+├── evidence/    Amphi and AWS outputs, screenshots
+└── policies/    baseline, app-role, allow-only, boundary, trust, region guardrail, expanded and shrunk
 ```
 
 ## Data handling
